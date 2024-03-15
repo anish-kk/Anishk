@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+html{
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: pink;
+    font-family: "Space Grotesk", sans-serif;
+    text-align: center;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+.header-content,
+.main-content{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 3rem;
+    flex-direction: column;
+
+}
+.header-content{
+    justify-content:space-between;
+    flex-direction:row;
+}
+nav a{
+    margin-left: 20px;
+}
+nav a:hover{
+    border-bottom: 2px solid #000000;
+}
+
+/* home css */
+#home{
+    padding: 70px 0;
+}
+
+.profile-info{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.text-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.text-info h1{
+    border-bottom: 2px solid #000;
+}
+
+.user-bio a{
+    border-bottom:1px solid #000;
+}
+
+.quote-box{
+    padding: 16px;
+    background-color: antiquewhite;
+    border-radius: 3px;
+}
+
+
+
+/******** about projection section *******/
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 12px;
+}
+
+.project{
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+}
+.projet h3,
+.project p{
+text-align: left;
+}
+
+.project p{ 
+    font-size: 10px;
+}
+
+.project-language{
+    display: flex;
+    gap: 8px;
+    font-weight: 800;
+    font-size: 12px;
+    color: #333;
+}
+.more-project{
+    margin-top: 10px;
+    font-weight: 800px;
+    width: 95%;
+    color:#000;
+    border:1px solid #000;
+    border-radius: 5px;
+    padding: 16px;
+
+}
+/* media screen */
+@media screen and (min-width: 1025px){
+    .project-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+    /* ****foter css */
+    footer{
+    padding: 50px 0 20px;
+    }
+
+    
+
+    
+
+
